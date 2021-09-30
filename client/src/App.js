@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 
 // import './App.css';
@@ -151,6 +152,12 @@ import Script from "react-load-script";
 import Canvas from "./components/map/canvas";
 import CharacterSelect from "./components/characerSelect/characterSelect";
 import Interface from "./components/interface/interface";
+=======
+import React, {Component} from "react";
+import Script from "react-load-script";
+import Canvas from "./components/map/canvas";
+
+>>>>>>> 81cf7f2e079f7d7db23418f59cca3330c2a2b904
 
 class App extends Component {
 	state = { scriptLoaded: false };
@@ -175,8 +182,11 @@ class App extends Component {
 				/>
 				
       <Canvas />
+<<<<<<< HEAD
 	  <Interface />
 	  <CharacterSelect />
+=======
+>>>>>>> 81cf7f2e079f7d7db23418f59cca3330c2a2b904
  
       <script src="./utils/resources.js"></script>
 		
@@ -188,4 +198,8 @@ class App extends Component {
 };
 
 
+<<<<<<< HEAD
 export default App;
+=======
+export default App;
+>>>>>>> 81cf7f2e079f7d7db23418f59cca3330c2a2b904
