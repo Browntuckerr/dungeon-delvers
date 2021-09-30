@@ -26,6 +26,8 @@ class App extends Component {
 				/>
 				
       <Canvas />
+	  <Interface />
+	  <CharacterSelect />
  
       <script src="./utils/resources.js"></script>
 		
