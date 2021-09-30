@@ -4,12 +4,12 @@ This project was created with the React application and the purpose of this app 
 
 ## Tech and Libraries used.
 
-Bootstrap
-JavaScript
-React
-GraphQl
-Express
-ApolloServer
+1. Bootstrap
+2. JavaScript
+3. React
+4. GraphQl
+5. Express
+6. ApolloServer
 
 ### Installation
 
