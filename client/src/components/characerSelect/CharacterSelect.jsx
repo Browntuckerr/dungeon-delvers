@@ -1,8 +1,7 @@
 import React from 'react'
-import "./characterSelect.css";
 import "../../../public/utils/gameManager";
 
-export default function characterSelect() {
+export default function CharacterSelect() {
     return (
         <div>
             <div className="characterClass">

@@ -1,6 +1,6 @@
 import React from 'react'
 
-export default function interface() {
+export default function Interface() {
     return (
         <div className="interface">
             <div className="header">
@@ -9,4 +9,3 @@ export default function interface() {
         </div>
     )
 }
-
