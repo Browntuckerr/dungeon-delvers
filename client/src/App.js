@@ -1,25 +1,40 @@
-import logo from './logo.svg';
-import './App.css';
+import React, {Component} from "react";
+import Script from "react-load-script";
+import Canvas from "./components/map/canvas";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+
+class App extends Component {
+	state = { scriptLoaded: false };
+
+	handleScriptError() {
+		console.log("Error while loading script");
+	}
+
+	handleScriptLoad() {
+		console.log("Script loaded successfully");
+		this.setState({ scriptLoaded: true });
+	}
+
+	render() {
+		return (
+			<div>
+				<Script
+					url="utils/resources.js"
+					onError={this.handleScriptError.bind(this)}
+					onLoad={this.handleScriptLoad.bind(this)}
+
+				/>
+				
+      <Canvas />
+ 
+      <script src="./utils/resources.js"></script>
+		
+     
+      </div>
+    );
+	}
+  
+};
+
 
 export default App;
